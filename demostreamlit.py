@@ -8,7 +8,21 @@ st.text("In the lession, we go through a demo of using the package streamlit to 
 
 #st.image('build.jpg')
 
-st.sidebar.write('Please select your interests')
+st.sidebar.title('Contents')
+
+pages = {
+        "Introduction": intro,
+        "Methodology": method,
+        "Results": result,
+    }
+
+
+
+# Radio buttons to select desired option
+page = st.sidebar.radio("", tuple(pages.keys()))
+
+pages[page].show_page()
+
 
 st.write("This is some text")
 
