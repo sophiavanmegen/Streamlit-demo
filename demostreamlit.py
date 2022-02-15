@@ -5,7 +5,7 @@ import altair as alt
 
 
 st.title("Relationship between google search results and stock price")
-st.text("In the past few weeks, we completed a Python course where we investigated the relationship between google search results and the stock price.")
+st.text("In the past few weeks, we completed a Python course where we investigated the relationship between Google search results and the stock price.")
 
 #st.image('build.jpg')
 
@@ -22,10 +22,13 @@ show_method = st.sidebar.checkbox("Methodology")
 show_result = st.sidebar.checkbox("Results")
 
 if show_intro:
+    st.title('Introduction') 
     st.write('For our Python project we investigated the relationship between Google search results and the stock price.')
 
 if show_method:
+    st.title('Methodology')
     st.write('For our Python project we investigated the relationship between Google search results and the stock price.')
     
 if show_result:
+    st.title('Results')
     st.write('For our Python project we investigated the relationship between Google search results and the stock price.')
