@@ -1,6 +1,14 @@
 import streamlit as st
+       from helpers import read_markdown
 import pandas as pd
 import altair as alt
+
+
+
+
+import page_introduction as pi
+import page_distances as pd
+import page_documentation as doc
 
 
 st.title("Hello World - Lesson 4")
@@ -21,12 +29,6 @@ if show_df:
     st.dataframe(df)
 
 
-    import streamlit as st
-from helpers import read_markdown
-
-import page_introduction as pi
-import page_distances as pd
-import page_documentation as doc
 
 
 # Page settings
