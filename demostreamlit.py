@@ -10,31 +10,6 @@ st.text("In the past few weeks, we completed a Python course where we investigat
 #st.image('build.jpg')
 
 st.sidebar.title('Contents')
-
-
-def home():
-    st.title("Home")
-    st.markdown("Please find help **here**")
-
-def info():
-    st.title("Info")
-
-def myhelp():
-    st.title("Help")
-
-menu = {
-    "Home": home,
-    "Info": info,
-    "Help": myhelp
-}
-
-def main():
-    menu_item = st.sidebar.radio(
-        "Navigation",
-        ["Home", "Info", "Help"]
-    )
-
-    menu[menu_item]()
     
 st.write("This is some text")
 
@@ -42,9 +17,15 @@ st.write("This is some text")
 #df = pd.read_csv('happiness_data_clean.csv')
 #st.dataframe(df)
 
-show_df = st.sidebar.checkbox("Show dataframe")
+show_intro = st.sidebar.checkbox("Introduction")
+show_method = st.sidebar.checkbox("Methodology")
+show_result = st.sidebar.checkbox("Results")
 
-if show_df:
-    st.dataframe(df)
+if show_intro:
+    st.write('For our Python project we investigated the relationship between Google search results and the stock price.')
 
-
+if show_method:
+    st.write('For our Python project we investigated the relationship between Google search results and the stock price.')
+    
+if show_result:
+    st.write('For our Python project we investigated the relationship between Google search results and the stock price.')
