@@ -39,8 +39,8 @@ def main():
 st.write("This is some text")
 
 
-df = pd.read_csv('happiness_data_clean.csv')
-st.dataframe(df)
+#df = pd.read_csv('happiness_data_clean.csv')
+#st.dataframe(df)
 
 show_df = st.sidebar.checkbox("Show dataframe")
 
