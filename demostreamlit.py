@@ -1,10 +1,3 @@
-!pip install pytrends
-!pip install yfinance
-!pip install tweepy
-!git clone https://github.com/qztseng/google-trends-daily.git
-%cd google-trends-daily/
-!python gtrend.py install
-
 
 import streamlit as st
 import pandas as pd
