@@ -35,10 +35,10 @@ st.set_page_config(page_title='CosmΩracle')
 
 #Sidebar settings
 
-logo, name = st.sidebar.columns(2)
-with logo:
-    image = 'https://github.com/nikosarcevic/CosmOracle/blob/main/images/LogowName.png?raw=true'
-    st.image(image, use_column_width=True)
+#logo, name = st.sidebar.columns(2)
+#with logo:
+#    image = 'https://github.com/nikosarcevic/CosmOracle/blob/main/images/LogowName.png?raw=true'
+#    st.image(image, use_column_width=True)
 
 st.sidebar.write(" ")
 
