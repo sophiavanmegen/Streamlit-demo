@@ -3,35 +3,41 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-import pytrends as pt
-from pytrends.request import TrendReq
-import numpy as np
-import yfinance as yf
-import datetime as dt
-import tweepy as tw
-import matplotlib.pyplot as plt
-from pandas_datareader import data as pdr
-import gtrend
 
-import os
-import seaborn as sns
-import itertools
-import collections  
-import nltk
-from nltk.corpus import stopwords
-import re
-import networkx
-
-import warnings
-
-st.title("Hello World - Lesson 4")
-st.text("In the lession, we go through a demo of using the package streamlit to build webapps.")
+st.title("Relationship between google search results and stock price")
+st.text("In the past few weeks, we completed a Python course where we investigated the relationship between google search results and the stock price.")
 
 #st.image('build.jpg')
 
 st.sidebar.title('Contents')
 
+
+def home():
+    st.title("Home")
+    st.markdown("Please find help **here**")
+
+def info():
+    st.title("Info")
+
+def myhelp():
+    st.title("Help")
+
+menu = {
+    "Home": home,
+    "Info": info,
+    "Help": myhelp
+}
+
+def main():
+    menu_item = st.sidebar.radio(
+        "Navigation",
+        ["Home", "Info", "Help"]
+    )
+
+    menu[menu_item]()
+    
 st.write("This is some text")
+
 
 df = pd.read_csv('happiness_data_clean.csv')
 st.dataframe(df)
