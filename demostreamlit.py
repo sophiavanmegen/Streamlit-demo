@@ -34,7 +34,7 @@ if show_method:
     st.image(image2, caption=["Correlation between St. deviation of Visa stock price and number of Google searches"])
   
     #Graphed together
-    st.write('In the graph below we depicted the trends of the Visa stock prices (left) and the Google searches (right). 
+    st.write("In the graph below we depicted the trends of the Visa stock prices (left) and the Google searches (right).")
     st.image(combined_nonstandard, caption=["Trends of Visa Stock prices and number of Google searches")
     st.write('When we standardize the variables we see that there is no significant correlation between the two variables.                            
 
